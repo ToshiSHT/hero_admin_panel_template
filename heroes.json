@@ -1,0 +1,49 @@
+{
+  "heroes": [
+    {
+      "id": "d1829c79-4885-4280-b8d2-d0c035929ae4",
+      "name": "Крутой чувак 2",
+      "description": "всё что угодно",
+      "element": "fire"
+    },
+    {
+      "id": "090d84ff-8850-4c99-8f1c-2a17159b7887",
+      "name": "Крутой чувак 4",
+      "description": "всё что угодно",
+      "element": "water"
+    },
+    {
+      "id": "53541b4c-f946-43ca-a40c-0c4c2b246cb8",
+      "name": "Крутой чувак 5",
+      "description": "всё что угодно",
+      "element": "wind"
+    }
+  ],
+  "filters": [
+    {
+      "element": "all",
+      "className": "btn btn-outline-dark",
+      "title": "Все"
+    },
+    {
+      "element": "fire",
+      "className": "btn btn-danger",
+      "title": "Огонь"
+    },
+    {
+      "element": "water",
+      "className": "btn btn-primary",
+      "title": "Вода"
+    },
+    {
+      "element": "wind",
+      "className": "btn btn-success",
+      "title": "Ветер"
+    },
+    {
+      "element": "earth",
+      "className": "btn btn-secondary",
+      "title": "Земля"
+    }
+  ]
+}
