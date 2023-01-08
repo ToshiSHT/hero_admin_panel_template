@@ -2,7 +2,7 @@
 import { Formik, Form, Field} from 'formik';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch, useSelector} from 'react-redux';
-import { createHeroes } from '../../actions';
+import { createHeroes } from '../heroesList/heroesSlice';
 import { useHttp } from '../../hooks/http.hook';
 
 // Задача для этого компонента:
@@ -24,7 +24,8 @@ const HeroesAddForm = () => {
     const arrFilters = useSelector(state => state.filters.filters)
 
     const onCreateHeroes = (values,id) => {
-        dispatch(createHeroes(values,id));
+        const newHero = {...values,id:id}
+        dispatch(createHeroes(newHero));
         request('http://localhost:3001/heroes','POST', JSON.stringify({id,...values}))
     }
 
